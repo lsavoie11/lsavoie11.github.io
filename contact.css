@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Montserrat";
+  font-family: "Raleway";
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Raleway:wght@400&display=swap")
+      format("woff2"),
+    url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Raleway:wght@400&display=swap")
+      format("woff"),
+    format("truetype");
+}
+
 body {
   background-color: rgba(153, 146, 146, 0.5);
   margin: 0;

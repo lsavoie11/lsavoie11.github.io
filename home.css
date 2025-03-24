@@ -21,7 +21,6 @@ header {
   text-align: center;
   padding: 1em;
 }
-
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -37,63 +36,90 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
 }
-main {
-  max-width: 1200px;
-  margin: 2em auto;
-  padding: 1em;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2em;
-  justify-content: center;
-}
-
-.portfolio-item {
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 1em;
-  width: 30%;
-  text-align: center;
-}
-.portfolio-item img {
-  max-width: 100%;
-  border-radius: 8px;
-}
-
-.portfolio-item h3 {
-  font-family: "Montserrat", sans-serif;
-  color: rgb(48, 21, 98);
-  font-weight: bold;
-}
-
-.portfolio-item p {
-  text-align: left;
-  color: rgb(0, 0, 0);
-}
-
-.portfolio-item a {
-  display: inline-block;
-  margin-top: 1em;
-  padding: 0.5em 1em;
-  background-color: rgb(48, 21, 98);
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-}
-.portfolio-item a:hover {
-  background-color: rgb(36, 16, 74);
-}
 
 footer {
   text-align: center;
   padding: 1em;
   background-color: #36454f;
   color: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sections-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+section {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 1em;
+  padding: 1em;
+  width: 45%;
+}
+
+#heading1 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+#heading2,
+#heading3 {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(48, 21, 98);
+  font-weight: bold;
+  text-align: center;
+}
+
+.intro,
+.hobbies {
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+
+#switch-button {
+  background-color: rgb(56, 17, 17);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.images-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 1em;
+}
+
+.images-container img {
+  width: 45%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  text-decoration: solid;
+  color: rgb(239, 216, 216);
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
 }
