@@ -1,8 +1,3 @@
-@font-face {
-  font-family: "Montserrat";
-  src: url("https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap");
-}
-
 body {
   background-color: rgba(153, 146, 146, 0.5);
   margin: 0;
@@ -10,19 +5,35 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-header,
+header {
+  background-color: rgb(48, 21, 98);
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
 footer {
   text-align: center;
   padding: 1em;
-  background-color: rgb(48, 21, 98);
-  color: white;
+  background-color: #36454f;
 }
 
 main {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   padding: 1em;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sections-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
 }
 
 section {
@@ -32,7 +43,7 @@ section {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 1em;
   padding: 1em;
-  width: 30%;
+  width: 45%;
 }
 
 #heading1 {
@@ -53,4 +64,35 @@ section {
 .hobbies {
   text-align: left;
   color: rgb(0, 0, 0);
+}
+
+#switch-button {
+  background-color: rgb(56, 17, 17);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.images-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 1em;
+}
+
+.images-container img {
+  width: 45%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  text-decoration: solid;
+  color: rgb(239, 216, 216);
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
 }
